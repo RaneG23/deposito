@@ -7,7 +7,7 @@ class testgetDepositoMax {
 	@Test
 	void testGetDepositoMax() {
 		DepositoCombustible tank = new DepositoCombustible(40.0,0.0);
-        System.out.print(tank.getDepositoMax());
+        assertEquals(40.0, tank.getDepositoMax());
 	}
 
 }
