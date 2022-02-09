@@ -6,11 +6,9 @@ class testestaVacio {
 
 	@Test
 	void testEstaVacio() {
-		DepositoCombustible tank = new DepositoCombustible(40.0,0.0);
-		tank.fill(10);
-		System.out.println(tank.estaVacio());
+		DepositoCombustible tank = new DepositoCombustible(40.0,10.0);
 		tank.consumir(10);
-		System.out.println(tank.estaVacio());
+		assertTrue(tank.estaVacio());
 	}
 
 }
