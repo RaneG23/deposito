@@ -6,8 +6,8 @@ class testgetDepositoNivel {
 
 	@Test
 	void testGetDepositoNivel() {
-		DepositoCombustible tank = new DepositoCombustible(40.0,0.0);
-        System.out.println(tank.getDepositoNivel());
+		DepositoCombustible tank = new DepositoCombustible(40.0,5.0);
+		assertEquals(5.0, tank.getDepositoNivel());
 	}
 
 }
