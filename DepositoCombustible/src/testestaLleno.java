@@ -7,9 +7,8 @@ class testestaLleno {
 	@Test
 	void testEstaLleno() {
 		DepositoCombustible tank = new DepositoCombustible(40.0,0.0);
-		System.out.println(tank.estaLleno());
-		tank.fill(40);
-		System.out.println(tank.estaLleno());
+		tank.fill(40.0);
+		assertEquals(true, tank.estaLleno());
 	}
 
 }
