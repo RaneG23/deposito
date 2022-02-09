@@ -8,7 +8,7 @@ class testestaLleno {
 	void testEstaLleno() {
 		DepositoCombustible tank = new DepositoCombustible(40.0,0.0);
 		tank.fill(40.0);
-		assertEquals(true, tank.estaLleno());
+		assertTrue(tank.estaLleno());
 	}
 
 }
